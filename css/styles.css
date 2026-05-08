@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 48px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 16px * 2) / 3);
+  overflow: hidden;
+}
+
+.gallery-link {
+  display: block;
+  cursor: zoom-in;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
