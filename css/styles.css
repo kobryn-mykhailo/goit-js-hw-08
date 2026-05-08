@@ -22,6 +22,7 @@ body {
 
 .gallery-item {
   flex-basis: calc((100% - 16px * 2) / 3);
+  height: 260px;
   overflow: hidden;
 }
 
